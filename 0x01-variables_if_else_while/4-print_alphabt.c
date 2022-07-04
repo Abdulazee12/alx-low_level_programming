@@ -5,13 +5,13 @@
  * Return: 0 (Success)
  */
 
-char main(void)
+int main(void)
 {
-	char a;
+	int i;
 
-	for (a = 97; a <= 122; a++)
+	for (i = 97; i <= 122; i++)
 	{
-		if (a != 101 && a != 113)
+		if (i != 101 && i != 113)
 			putchar(i);
 	}
 	putchar('\n');
