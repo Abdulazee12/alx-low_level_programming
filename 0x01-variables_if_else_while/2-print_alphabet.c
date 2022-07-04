@@ -2,15 +2,15 @@
 
 /**
  * main - This program prints every letter of the alphabet in lowercase
- * Retrun: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int i;
+	char a;
 
-	for (i = 97; i <= 122; i++)
-		putchar (i);
+	for (a = 97; a <= 122; a++)
+		putchar (a);
 	putchar('\n');
 	return (0);
 }
