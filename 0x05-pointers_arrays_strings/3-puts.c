@@ -2,13 +2,12 @@
 /**
  * _puts - prints a string, followed by a new line.
  * @str: input string to print.
- * Return: no return.
  */
 void _puts(char *str)
 {
 	while (*str != '\0')
 	{
-		_putchar(*str);
+		_putchar(str);
 		str++;
 	}
 	_putchar('\n');
