@@ -10,27 +10,46 @@ nclude "main.h"
  *
  *Return: pointer to s.
  */
-char *leet(char *s)
+char *leet(char *c)
 {
-		int stringCount, leetCount;
-		char leetLetters[] = "aAeEoOtTlL";
-		char leetNums[] = "4433007711";
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-/*  scan through string */
-	stringCount = 0;
-	while (s[stringCount] != '\0')
-/* check whether leetLetter is found */
+	while (*c)
 	{
-		leetCount = 0;
-		while (leetCount < 10)
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if (leetLetters[leetCount] == s[stringCount])
+			/*32 is the difference between lower case letters and apper case letters*/
+			if (*c == key[i] || *c == key[i] + 32)
 			{
-				s[stringCount] = leetNums[leetCount];
+				*c = 48 + value[i];
 			}
-			leetCount++;
 		}
-		stringCount++;
+		c++;
 	}
-	return (s);
+
+	return (cp);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
