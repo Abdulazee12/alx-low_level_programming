@@ -13,6 +13,8 @@ char *strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
+		while (*needle)
+		{
 		if (*haystyack++ != *needle++)
 		{
 			break;
