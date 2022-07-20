@@ -1,5 +1,5 @@
-#ifndef FILE_HOLBERTON
-#define FILE_HOLBERTON
+#ifndef ZICHO_LEE
+#define ZICHO_LEE
 
 
 char *_memset(char *s, char b, unsigned int n);
