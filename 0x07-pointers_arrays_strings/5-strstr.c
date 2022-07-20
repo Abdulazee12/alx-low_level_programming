@@ -15,10 +15,10 @@ char *strstr(char *haystack, char *needle)
 	{
 		while (*needle)
 		{
-		if (*haystyack++ != *needle++)
-		{
-			break;
-		}
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
 	}
 	if (!*needle)
 	{
@@ -27,4 +27,6 @@ char *strstr(char *haystack, char *needle)
 	needle = fneedle;
 	result++;
 	haystack = result;
+	}
+	return (0);
 }
